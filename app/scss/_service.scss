@@ -1,0 +1,44 @@
+.list {
+	padding: 200px 0;
+}
+.list-title {
+	width: 85%;
+}
+.list-items {
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(100% + 28px);
+	margin: 70px 0 0 -14px;
+}
+.list-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #37373E;
+	box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.25);
+	padding: 0 20px;
+	height: 188px;
+	width: calc(33% - 28px);
+	margin: 0 14px 28px 14px;
+}
+.list-item.btn {
+	background: transparent;
+	box-shadow: none;
+}
+.list-item__text {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 130%;
+	text-align: center;
+}
+.list-desc {
+	margin: 50px 0 0 0;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 155%;
+	width: 70%;
+	& strong {
+		font-weight: 500;
+		color: $mainColor;
+	}
+}

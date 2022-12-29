@@ -1,0 +1,217 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+li {
+	list-style-type: none;
+}
+
+button {
+	cursor: pointer;
+	outline: 0 none !important;
+
+}
+
+body::-webkit-scrollbar {
+	width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
+
+.slick-slide img:focus {
+	outline: none !important;
+}
+
+.slick-slide:focus {
+	outline: none !important;
+}
+
+.towar-box-sec5 a {
+	outline: none !important;
+}
+
+.slick-slide {
+	outline: none !important;
+}
+
+.slick-slide p {
+	outline: none !important;
+}
+
+.slick-slide a {
+	outline: none !important;
+}
+
+.slick-slide div {
+	outline: none !important;
+}
+
+.slick-track {
+	outline: none !important;
+}
+
+input {
+	outline: 0 none !important;
+
+	font-family: $mainFont
+}
+
+input[type=text] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type=tel] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type=email] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type=submit] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+button {
+	font-family: $mainFont;
+	color: #FFFFFF;
+}
+
+select {
+	cursor: pointer;
+	outline: 0 none !important;
+	font-family: $mainFont;
+}
+
+textarea {
+	outline: 0 none !important;
+	font-family: $mainFont;
+}
+
+body {
+	background: $mainBg;
+	font-family: $mainFont;
+	color: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $mainFont;
+}
+
+ul {
+	margin-bottom: 0;
+}
+
+.app {
+	overflow: hidden;
+	min-width: 320px;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.main-btn {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 20px 50px 20px 30px;
+	background: $mainColor;
+	border: 1px solid transparent;
+	position: relative;
+	color: #FFFFFF;
+	filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.25));
+}
+.main-btn::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-color: transparent transparent transparent #ffffff;
+	right: 30px;
+	top: calc(50% - 4px);
+}
+.title {
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 126%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.main-line {
+	width: 205px;
+	height: 2px;
+	background: $mainColor;
+	margin: 35px 0 60px 0;
+}
+.center-btn__wrapper {
+	display: flex;
+	justify-content: center;
+}
+.price, .about, .project {
+	padding: 0 0 190px 0;
+}
+
+@media only screen and (min-width: 1000px) {
+	.header-nav__list li:hover a {
+		color: #FFFFFF;
+		transition: all 0.3s ease;
+	}
+	.contacts__item-link:hover {
+		color: #687960;
+		transition: all 0.3s ease;
+	}
+	.contacts-item:hover>.contacts-item__text, .contacts-item__phone:hover .contacts-item__text, .other-developer a:hover {
+		color: #ffffffb4;
+		transition: all 0.3s ease;
+	}
+	.footer-list li:hover a, .other-info a:hover {
+		color: #FFFFFF;
+		transition: all 0.3s ease;
+	}
+	.popup-callback__item input:hover, .popup-callback__item input:focus {
+		border: 1px solid $mainColor;
+		transition: all 0.3s ease;
+		color: #FFFFFF;
+	}
+}
+
