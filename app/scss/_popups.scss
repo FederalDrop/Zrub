@@ -23,7 +23,7 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    right: -50px;
+    right: 0px;
     top: -50px;
     z-index: 555;
     cursor: pointer;
@@ -96,4 +96,34 @@
     position: absolute;
     top: calc(50% - 12px);
     right: 20px;
+}
+.video_popup {
+    height: 640px;
+    width: 1300px;
+    iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+}
+@media only screen and (max-width: 1500px){
+    .video_popup {
+        height: 450px;
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 1160px){
+    .video_popup {
+        width: calc(100% - 40px);
+        position: relative;
+        padding-bottom: 53.25%; /* 16:9 */
+        height: 0;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
