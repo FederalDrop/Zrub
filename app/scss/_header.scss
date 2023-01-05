@@ -71,7 +71,6 @@
 }
 .contacts__item-text {
 	text-align: right;
-	font-family: $subFont;
 }
 .header-lang {
 	position: absolute;
@@ -85,4 +84,121 @@
 	color: #FFFFFF;
 	text-transform: uppercase;
 	background: #24242C;
+}
+.header-burger {
+	display: none;
+}
+@media only screen and (max-width: 1600px){
+	.header-lang {
+		right: 10px;
+	}
+}
+@media only screen and (max-width: 1450px){
+	.header-lang {
+		position: relative;
+		right: 0;
+		display: flex;
+		align-items: center;
+	}
+	.header-body {
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 1300px){
+	.header-nav__list li {
+		margin: 0 20px 0 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	.contacts__item-link {
+		font-size: 16px;
+	}
+	.contacts__item-text {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 1000px){
+	.header {
+		padding: 10px 0;
+	}
+	.header-contacts, .header-logo {
+		padding: 0;
+	}
+	.contacts__item-text {
+		display: none;
+	}
+	.contacnts__item:first-child {
+		margin: 0;
+	}
+	.header-body {
+		align-items: center;
+	}
+	.header-lang, .header-nav {
+		display: none;
+	}
+	.header-burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 3;
+	}
+
+	.header-burger span {
+		position: absolute;
+		background-color: #FFFFFF;
+		right: 0;
+		width: 100%;
+		height: 3px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+		border-radius: 2px;
+	}
+
+	.header-burger:before,
+	.header-burger:after {
+		content: '';
+		background-color: #FFFFFF;
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+		border-radius: 2px;
+	}
+
+	.header-burger:before {
+		top: 0;
+	}
+
+	.header-burger:after {
+		bottom: 0;
+	}
+
+	.header-burger.active span {
+		transform: scale(0);
+	}
+
+	.header-burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+
+	.header-burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+}
+@media only screen and (max-width: 550px){
+	.header-logo__link {
+		width: 80px;
+		height: 60px;
+	}
+
+}
+@media only screen and (max-width: 420px){
+	.contacts__item-link {
+		font-size: 14px;
+	}
 }

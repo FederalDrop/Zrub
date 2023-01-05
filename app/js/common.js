@@ -1,5 +1,11 @@
 $(function () {
 
+	$('.header-burger').click(function (event) {
+		$('.header-burger').toggleClass('active');
+		$('.header').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
+
 	$('.work-slider').slick({})
 	var helpers = {
 		addZeros: function (n) {
@@ -14,6 +20,7 @@ $(function () {
 			$(this).slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
+				speed: 1000,
 				dots: false,
 				infinite: true,
 				responsive: [
@@ -53,6 +60,7 @@ $(function () {
 			$(this).slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
+				speed: 1000,
 				dots: false,
 				infinite: true,
 				responsive: [
@@ -88,6 +96,46 @@ $(function () {
 
 });
 
+if (window.matchMedia('(max-width: 1000px)').matches) {
+	$('.types-items').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		speed: 1000,
+		dots: true,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 800,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
+	});
+	$('.price-items').slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		speed: 1000,
+		dots: true,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 650,
+				settings: {
+					slidesToShow: 1,
+					adaptiveHeight: true,
+				}
+			},
+		]
+	});
+}
+
 window.addEventListener('load', function () {
 
 	const onScrollHeader = () => { // объявляем основную функцию onScrollHeader
@@ -111,7 +159,7 @@ window.addEventListener('load', function () {
 	}
 	onScrollHeader() // вызываем основную функцию onScrollHeader
 
-
+	//Выапдающие FAQ
 	let vipad = document.querySelectorAll('.faq-item__plug');
 	vipad.forEach(element => {
 		element.addEventListener('click', event => {
