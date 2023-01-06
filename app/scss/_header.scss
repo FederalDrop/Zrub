@@ -119,8 +119,67 @@
 	}
 }
 @media only screen and (max-width: 1000px){
+	body.lock {
+		overflow: hidden;
+	}
 	.header {
 		padding: 10px 0;
+		transition: all 0.5s ease;
+		max-height: 102px;
+		height: 100%;
+	}
+	.header.active {
+		max-height: 100%;
+		height: 100vh;
+		background: $mainBg;
+		overflow: auto;
+		transition: all 0.5s ease;
+	}
+	.header-nav {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		width: 100%;
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		transition: all 0.5s ease;
+	}
+	.header.active .header-nav {
+		max-height: 100%;
+		overflow: visible;
+		opacity: 1;
+		transition: all 0.5s ease;
+	}
+	.header-nav__list {
+		flex-direction: column;
+	}
+	.header-nav__list>.current_page_item {
+		border: none;
+	}
+	.header-nav__list>.current_page_item a {
+		color: rgba(255,255,255,.79);
+	}
+	.header-nav__list li {
+		margin: 0 0 25px 0;
+		font-size: 22px;
+	}
+	.header.active .header-lang {
+		max-height: 100px;
+		overflow: visible;
+		opacity: 1;
+		transition: all 0.5s ease;
+	}
+	.header-lang {
+		position: absolute;
+		left: 0;
+		bottom: 100px;
+		top: auto;
+		justify-content: center;
+		max-height: 0;
+		overflow: hidden;
+		opacity: 0;
+		transition: all 0.5s ease;
 	}
 	.header-contacts, .header-logo {
 		padding: 0;
@@ -133,9 +192,6 @@
 	}
 	.header-body {
 		align-items: center;
-	}
-	.header-lang, .header-nav {
-		display: none;
 	}
 	.header-burger {
 		display: block;
@@ -195,7 +251,15 @@
 		width: 80px;
 		height: 60px;
 	}
-
+	.header {
+		max-height: 81px;
+	}
+	.header-nav {
+		top: 100px;
+	}
+	.header-lang {
+		bottom: 50px;
+	}
 }
 @media only screen and (max-width: 420px){
 	.contacts__item-link {

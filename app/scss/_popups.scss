@@ -97,6 +97,13 @@
     position: absolute;
     top: calc(50% - 12px);
     right: 20px;
+    & svg path {
+        transition: all 0.5s ease;
+    }
+}
+.popup-callback__svg.active svg path {
+    stroke: $mainColor;
+    transition: all 0.5s ease;
 }
 .video_popup {
     height: 640px;
@@ -126,5 +133,27 @@
             width: 100%;
             height: 100%;
         }
+    }
+}
+@media only screen and (max-width: 480px){
+    .popup-callback {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 420px){
+    .popup-callback {
+        padding: 50px 20px;
+    }
+    .popup-callback__title {
+        font-size: 22px;
+    }
+    .popup-callback__item input {
+        font-size: 16px;
+    }
+    .popup-callback__item input[type=submit] {
+        font-size: 16px;
+        padding: 16px 0;
+        width: 100%;
     }
 }

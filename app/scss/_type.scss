@@ -1,27 +1,16 @@
-.type-head {
-	height: 100vh;
-	display: flex;
-	align-items: center;
+.type-title {
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 126%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	margin: 0 0 50px 0;
 }
-.type-head .head-info__about {
-	margin: 50px 0 60px 0;
-}
-.type-head .head-info__btns {
+.type .head-content {
 	margin: 0;
 }
-.type-head .head-slider .slick-next {
-	right: 0;
-	bottom: - 74px;
-}
-.type-head .head-slider__wrapper .slides-numbers {
-	left: 55%;
-	bottom: -69px;
-}
-.type-head .head-slider__wrapper {
+.type .head-slider__wrapper {
 	width: 50%;
-}
-.type-head .head-content {
-	margin: 0;
 }
 .build {
 	padding: 100px 0 0 0;
@@ -209,7 +198,18 @@
 		width: calc(40% - 25px);
 	}
 }
+@media only screen and (max-width: 1120px){
+	.type-title {
+		font-size: 38px;
+	}
+}
 @media only screen and (max-width: 1000px){
+	.type .head-slider__wrapper {
+		width: 100%;
+	}
+	.type .head-socail__abs {
+		bottom: 10%;
+	}
 	.build-content {
 		flex-direction: column;
 	}
@@ -281,6 +281,9 @@
 	.types-title {
 		width: 100%;
 	}
+	.type-title {
+		font-size: 32px;
+	}
 	.build-info .wp-redactor {
 		h1 {
 			font-size: 22px;
@@ -324,6 +327,10 @@
 	}
 	.dream-info__text {
 		font-size: 16px;
+	}
+	.type-title {
+		font-size: 26px;
+		margin: 0 0 30px 0;
 	}
 }
 @media only screen and (max-width: 480px){
@@ -374,6 +381,9 @@
 		height: 170px;
 	}
 	.dream-info__title {
+		font-size: 22px;
+	}
+	.type-title {
 		font-size: 22px;
 	}
 }
