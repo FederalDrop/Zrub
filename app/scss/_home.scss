@@ -56,7 +56,7 @@
 }
 .head-text__right {
 	position: absolute;
-	right: 0;
+	right: 10px;
 	top: calc(50% - 233px);
 	font-size: 150px;
 	writing-mode: vertical-lr;
@@ -349,7 +349,7 @@
 	position: absolute;
 	font-size: 150px;
 	line-height: 80%;
-	left: 0;
+	left: 5%;
 	top: calc(50% - 180px);
 	writing-mode: vertical-rl;
 	transform: rotate(180deg);
@@ -437,12 +437,12 @@
 .abs-about__right {
 	position: absolute;
 	top: 40px;
-	right: -5%;
+	right: 4%;
 	writing-mode: vertical-lr;
 }
 .abs-about__left {
 	position: absolute;
-	left: -4%;
+	left: 3.7%;
 	bottom: 190px;
 	writing-mode: vertical-lr;
 	transform: rotate(180deg);
@@ -675,7 +675,7 @@
 .text-abs__project {
 	font-size: 160px;
 	position: absolute;
-	right: 140px;
+	right: 15%;
 	top: 85px
 }
 .project-slider .slick-prev {
@@ -795,7 +795,7 @@
 .text-abs__faq {
 	font-size: 160px;
 	top: -30px;
-	right: -3%;
+	right: 6%;
 	position: absolute;
 }
 .faq-items {
@@ -994,6 +994,7 @@
 }
 .error .text-abs__top {
 	top: 120px;
+	right: 15%;
 }
 .error {
 	height: 100vh;
@@ -1108,18 +1109,15 @@
 		list-style: decimal;
 	}
 }
-
-@media only screen and (max-width: 2100px){
-	.abs-about__right, .text-abs__faq {
-		right: 20px;
-	}
-	.abs-about__left {
-		left: 20px;
-	}
-}
 @media only screen and (max-width: 1920px){
 	.abs-wrapper {
 		width: 100%;
+	}
+}
+@media only screen and (max-width: 1780px){
+	.text-abs__project {
+		font-size: 100px;
+		right: 6%;
 	}
 }
 @media only screen and (max-width: 1600px){
@@ -1141,10 +1139,26 @@
 	.head-slider .slick-next {
 		right: 0;
 	}
+	.abs-about__right {
+		writing-mode: horizontal-tb;
+		font-size: 100px;
+		top: 0;
+		right: 6%;
+	}
+	.abs-about__left {
+		writing-mode: horizontal-tb;
+		left: auto;
+		right: 6%;
+		bottom: auto;
+		top: 90px;
+		font-size: 100px;
+		transform: rotate(0deg);
+	}
 }
 @media only screen and (max-width: 1450px){
 	.head-text__right {
 		writing-mode: horizontal-tb;
+		right: 0;
 		top: -20%;
 	}
 	.text-abs__price {
@@ -1177,8 +1191,12 @@
 	.head-info {
 		margin: 0 20px 0 0;
 	}
-	.text-abs__project {
+	.text-abs__project, .abs-about__left, .abs-about__right {
 		right: 0;
+	}
+	.text-abs__faq {
+		right: 0;
+		font-size: 100px;
 	}
 }
 @media only screen and (max-width: 1200px){
@@ -1222,6 +1240,16 @@
 	}
 }
 @media only screen and (max-width: 1000px){
+	.abs-about__left {
+		writing-mode: vertical-lr;
+		top: 60%;
+		right: 7%;
+	}
+	.abs-about__right {
+		writing-mode: vertical-lr;
+		top: 20%;
+		right: 7%;
+	}
 	.types-items .slick-dots {
 		margin: 25px 0 40px 0;
 	}
@@ -1281,7 +1309,7 @@
 	}
 	.head {
 		height: auto;
-		padding: 170px 0 0 0;
+		padding: 200px 0 0 0;
 	}
 	.head-text__right {
 		top: -80px;
@@ -1352,11 +1380,6 @@
 	}
 	.fast-img, .comfort-img, .access-img, .line-img {
 		width: 50%;
-	}
-	.abs-about__left {
-		left: auto;
-		right: 0;
-		transform: rotate(0deg);
 	}
 	.project-item {
 		flex-direction: column;
@@ -1608,6 +1631,9 @@
 	}
 }
 @media only screen and (max-width: 550px){
+	.head {
+		padding: 150px 0 0 0;
+	}
 	.price-item:nth-child(even) {
     margin: 20px 7px 0 7px;
 	}
@@ -1966,16 +1992,24 @@
 	}
 	.main-btn {
 		font-size: 16px;
-		padding: 20px 0;
+		padding: 13px 0;
 		width: 100%;
 		&::before {
 			right: 15px;
 		}
 	}
+	.head-info__btns {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		margin: 20px 0 0 0;
+	}
+	.info__btn-play {
+		margin: 0 0 20px 0;
+	}
 }
 @media only screen and (max-width: 400px){
 	.head {
-		padding: 150px 0 0 0;
+		padding: 130px 0 0 0;
 	}
 	.head-text__right {
     font-size: 36px;
@@ -2002,14 +2036,6 @@
 	}
 	.info__about-text {
 		font-size: 16px;
-	}
-	.head-info__btns {
-		flex-direction: column-reverse;
-		align-items: flex-start;
-		margin: 20px 0 0 0;
-	}
-	.info__btn-play {
-		margin: 0 0 20px 0;
 	}
 	.text-abs__project {
 		font-size: 40px;

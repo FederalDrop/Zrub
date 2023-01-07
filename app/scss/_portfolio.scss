@@ -67,18 +67,13 @@
 .text-abs__top {
 	position: absolute;
 	top: -20px;
-	right: -5%;
+	right: 3%;
 	font-size: 150px;
-}
-@media only screen and (max-width: 2100px){
-	.text-abs__top {
-		right: 0;
-	}
 }
 @media only screen and (max-width: 1550px){
 	.text-abs__top {
 		top: 0;
-		right: 0;
+		right: 4%;
 		font-size: 100px;
 	}
 }
@@ -110,6 +105,7 @@
 	}
 	.text-abs__top {
 		top: -120px;
+		right: 0;
 	}
 }
 @media only screen and (max-width: 900px){
@@ -118,9 +114,6 @@
 	}
 }
 @media only screen and (max-width: 800px){
-	.work {
-		padding: 170px 0 120px 0;
-	}
 	.work-item {
 		margin: 0 0 80px 0;
 		&:last-child {
@@ -137,10 +130,11 @@
 	}
 }
 @media only screen and (max-width: 650px){
+	.work {
+		padding: 180px 0 120px 0;
+	}
 	.text-abs__top {
 		font-size: 70px;
-		right: auto;
-		left: 0;
 		top: -110px;
 	}
 	.error .text-abs__top {

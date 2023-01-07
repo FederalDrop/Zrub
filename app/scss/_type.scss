@@ -12,6 +12,18 @@
 .type .head-slider__wrapper {
 	width: 50%;
 }
+.type .head-slider .slick-next {
+	right: 0;
+}
+.type .head-slider__wrapper .slides-numbers {
+	right: 185px;
+	left: auto;
+}
+.type .head-text__bottom {
+	position: absolute;
+	bottom: -30%;
+	left: 3.6%;
+}
 .build {
 	padding: 100px 0 0 0;
 }
@@ -218,6 +230,9 @@
 	}
 }
 @media only screen and (max-width: 1000px){
+	.type .head-slider__wrapper .slides-numbers {
+		right: 150px;
+	}
 	.type .head-slider__wrapper {
 		width: 100%;
 	}
@@ -350,6 +365,9 @@
 	}
 }
 @media only screen and (max-width: 480px){
+	.type .head-slider__wrapper .slides-numbers {
+		right: 90px;
+	}
 	.build-info .wp-redactor {
 		h1 {
 			font-size: 18px;
