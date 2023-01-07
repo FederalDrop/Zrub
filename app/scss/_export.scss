@@ -20,7 +20,7 @@
 	}
 }
 .export-img {
-	width: calc(64% + 131px);
+	width: calc(59% + 131px);
 	height: 602px;
 	& img {
 		width: 100%;
@@ -297,6 +297,9 @@
 	}
 }
 @media only screen and (max-width: 550px){
+	.export-info__subtitle {
+		margin: 20px 0 0 0;
+	}
 	.export-img {
 		height: 320px;
 	}

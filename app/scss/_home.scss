@@ -814,7 +814,7 @@
 .faq-item__plug {
 	background: #37373E;
 	box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.16);
-	padding: 20px 40px 20px 15px;
+	padding: 20px 41px 20px 15px;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 144%;
@@ -1085,8 +1085,22 @@
 	}
 	ul li {
 		font-size: 18px;
-		line-height: 161%;
-		list-style: url('../img/svg/icon_circle-li.svg');
+		line-height: 140%;
+		position: relative;
+		list-style: none;
+		margin: 0 0 10px 0;
+		&:last-child {
+			margin: 0;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 9px;
+			left: -15px;
+			width: 8px;
+			height: 8px;
+			background: url('../img/svg/icon_circle-li.svg');
+		}
 	}
 	ol li {
 		font-size: 18px;
@@ -1208,6 +1222,12 @@
 	}
 }
 @media only screen and (max-width: 1000px){
+	.types-items .slick-dots {
+		margin: 25px 0 40px 0;
+	}
+	.slick-dotted.slick-slider {
+		margin: 0;
+	}
 	.abs-line.half-left {
 		left: 15%;
 	}
@@ -1283,10 +1303,16 @@
 		width: 369px;
 	}
 	.types {
-		padding: 100px 0 120px 0;
+		padding: 120px 0 120px 0;
 	}
 	.about, .price, .project {
 		padding: 0 0 120px 0;
+	}
+	.consalt {
+		padding: 120px 0;
+	}
+	.about-line, .benefits-line, .politics-line, .project-line, .work-line {
+		margin: 35px 0 60px 0;
 	}
 	.price-abs {
 		position: relative;
@@ -1409,9 +1435,6 @@
 	.abs-about__left {
 		display: none;
 	}
-	.about-line, .benefits-line, .politics-line, .project-line, .work-line {
-		margin: 35px 0 60px 0;
-	}
 	.text-abs__project {
 		font-size: 70px;
 		top: 70px;
@@ -1474,10 +1497,31 @@
 	.about-title {
 		width: 100%;
 	}
+	.price-abs {
+		margin: 0 0 20px 0;
+	}
+	.price-item__img {
+		height: 280px;
+	}
 }
 @media only screen and (max-width: 600px){
-	.types-items .slick-dots {
-		margin: 0;
+	.text-abs__project {
+		top: 15px;
+	}
+	.types {
+		padding: 100px 0;
+	}
+	.about-line, .benefits-line, .politics-line, .project-line, .work-line, .main-line, .price-line {
+		margin: 30px 0;
+	}
+	.about-item {
+		margin: 0 0 30px 0;
+	}
+	.access-btn {
+		margin: 30px 0 0 0;
+	}
+	.about-inside__title {
+		margin: 0 0 30px 0;
 	}
 	.types-text__abs {
 		bottom: auto;
@@ -1485,10 +1529,10 @@
 		font-size: 70px;
 	}
 	.about {
-		padding: 100px 0 80px 0;
+		padding: 75px 0 100px 0;
 	}
 	.price, .project {
-		padding: 0 0 80px 0;
+		padding: 0 0 100px 0;
 	}
 	.access-img, .comfort-img, .fast-img, .line-img {
 		height: 400px;
@@ -1521,6 +1565,7 @@
 	}
 	.text-abs__faq {
 		font-size: 80px;
+		top: -12px;
 	}
 	.consalt {
 		padding: 100px 0;
@@ -1563,6 +1608,9 @@
 	}
 }
 @media only screen and (max-width: 550px){
+	.price-item:nth-child(even) {
+    margin: 20px 7px 0 7px;
+	}
 	.title {
 		font-size: 26px;
 	}
@@ -1666,7 +1714,7 @@
 		}
 	}
 	.text-abs__project {
-		top: 55px;
+		top: -3px;
 	}
 	.project-item__img {
 		height: 320px;
@@ -1681,6 +1729,13 @@
 	}
 	.error-btn {
 		text-align: center;
+	}
+	.price-item__img {
+		height: 222px;
+	}
+	.text-abs__faq {
+    font-size: 50px;
+    top: -12px;
 	}
 }
 @media only screen and (max-width: 480px){
@@ -1730,9 +1785,6 @@
 		font-size: 50px;
 		top: 5px;
 	}
-	.price-line {
-		margin: 35px 0 30px 0;
-	}
 	.price-abs__text {
 		font-size: 16px;
 	}
@@ -1746,21 +1798,37 @@
 		height: 220px;
 	}
 	.project-item__info {
-		& h3 {
-			font-size: 26px;
-			margin: 0 0 20px 0;
-		}
-		& p {
+			h1 {
+				font-size: 26px;
+				margin: 0 0 20px 0;
+			}
+			h2 {
+				font-size: 26px;
+				margin: 0 0 20px 0;
+			}
+			h3 {
+				font-size: 26px;
+				margin: 0 0 20px 0;
+			}
+			h4 {
+				font-size: 26px;
+				margin: 0 0 20px 0;
+			}
+			h5 {
+				font-size: 26px;
+				margin: 0 0 20px 0;
+			}
+			h6 {
+				font-size: 26px;
+				margin: 0 0 20px 0;
+			}
+		p {
 			font-size: 16px;
 			margin: 0 0 20px 0;
 		}
-		& ul li, ol li {
+		ul li, ol li {
 			font-size: 16px;
 		}
-	}
-	.text-abs__faq {
-		font-size: 50px;
-		top: 20px;
 	}
 	.politics {
 		padding: 120px 0 70px 0;
@@ -1801,9 +1869,6 @@
 	.about-inside__title {
 		font-size: 22px;
 		margin: 0 0 15px 0;
-	}
-	.about-line, .benefits-line, .politics-line, .project-line, .work-line {
-		margin: 30px 0;
 	}
 	.wp-redactor {
 		& h1 {
@@ -1850,11 +1915,25 @@
 	.safe-img, .safe-img_wrapper {
 		height: 190px;
 	}
-	.project-item__info h3 {
-		font-size: 24px;
-	}
-	.project-line {
-		margin: 30px 0 70px 0;
+	.project-item__info {
+		h1 {
+			font-size: 24px;
+		}
+		h2 {
+			font-size: 24px;
+		}
+		h3 {
+			font-size: 24px;
+		}
+		h4 {
+			font-size: 24px;
+		}
+		h5 {
+			font-size: 24px;
+		}
+		h6 {
+			font-size: 24px;
+		}
 	}
 	.project-title {
 		width: 100%;
@@ -1935,16 +2014,36 @@
 	.text-abs__project {
 		font-size: 40px;
 	}
-	.text-abs__faq {
-		top: 50px;
-	}
 	.contacts-item__text {
 		font-size: 16px;
 	}
 	.politics-title {
 		font-size: 22px;
 	}
-	.project-item__info h3 {
-		font-size: 20px;
+	.project-item__info {
+		h1 {
+			font-size: 20px;
+			line-height: 130%;
+		}
+		h2 {
+			font-size: 20px;
+			line-height: 130%;
+		}
+		h3 {
+			font-size: 20px;
+			line-height: 130%;
+		}
+		h4 {
+			font-size: 20px;
+			line-height: 130%;
+		}
+		h5 {
+			font-size: 20px;
+			line-height: 130%;
+		}
+		h6 {
+			font-size: 20px;
+			line-height: 130%;
+		}
 	}
 }
