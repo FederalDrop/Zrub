@@ -114,6 +114,26 @@
         border-radius: 15px;
     }
 }
+.done-body {
+    background: #24242C;
+    box-shadow: 0px 2px 20px 4px rgba(0, 0, 0, 0.25);
+    padding: 45px 40px 50px 40px;
+    max-width: 450px;
+    & p {
+        text-align: center;
+    }
+}
+.done-body__thanks {
+    font-size: 26px;
+}
+.done-body__title {
+    font-size: 22px;
+    margin: 20px 0;
+}
+.done-body__subtitle {
+    font-size: 20px;
+    line-height: 130%;
+}
 @media only screen and (max-width: 1500px){
     .video_popup {
         height: 450px;
@@ -136,12 +156,18 @@
     }
 }
 @media only screen and (max-width: 480px){
-    .popup-callback {
+    .popup-callback, .done-body {
         width: 90%;
         margin: 0 auto;
     }
+    .popup-done .air-close {
+        right: 25px;
+    }
 }
 @media only screen and (max-width: 420px){
+    .done-body__title, .done-body__subtitle {
+        font-size: 16px;
+    }
     .popup-callback {
         padding: 50px 20px;
     }

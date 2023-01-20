@@ -188,7 +188,7 @@
 									</p>
 								</div>
 								<div class="head-info__btns">
-									<button class="info__btn main-btn air-open-btn" data-popup-current="callback_form">Отримати
+									<button class="info__btn main-btn air-open-btn" data-popup-current="formdone">Отримати
 										консультацiю</button>
 									<div class="info__btn-play air-open-btn video-btn" data-popup-current="video"
 										data-video-src="https://www.youtube.com/embed/xyrYesCwaTk">
@@ -201,10 +201,22 @@
 							</div>
 							<div class="head-slider__wrapper">
 								<div class="head-slider">
-									<div class="head-slider__item"><img src="img/main_slider_img.jpg" alt="slider"></div>
-									<div class="head-slider__item"><img src="img/about_border_img-1.jpg" alt="slider"></div>
-									<div class="head-slider__item"><img src="img/about_price_img-1.jpg" alt="slider"></div>
-									<div class="head-slider__item"><img src="img/about_safe_img-4.jpg" alt="slider"></div>
+									<div class="head-slider__item">
+										<picture>
+											<source srcset="img/main_slider_img.jpg" type="image/jpeg" media="(min-width:1000px)">
+											<source srcset="img/about_border_img-1.jpg" type="image/jpeg" media="(min-width: 500px)">
+											<source srcset="img/about_price_img-1.jpg" type="image/jpeg" media="(max-width: 500px)">
+											<img src="img/main_slider_img.jpg" alt="slider">
+										</picture>
+									</div>
+									<div class="head-slider__item">
+										<picture>
+											<source srcset="img/about_border_img-1.jpg" type="image/jpeg" media="(min-width:1000px)">
+											<source srcset="img/about_border_img-1.jpg" type="image/jpeg" media="(min-width: 500px)">
+											<source srcset="img/about_border_img-1.jpg" type="image/jpeg" media="(max-width: 500px)">
+											<img src="img/about_border_img-1.jpg" alt="slider">
+										</picture>
+									</div>
 								</div>
 								<div class="slides-numbers" style="display: block;">
 									<span class="slide-active">01</span> <span class="slide-trait">/</span> <span class="total"></span>
@@ -344,12 +356,8 @@
 						<h3 class="about-title title">Будівництво дерев`яних будинків <strong>HATA ZRUB</strong> це</h3>
 						<div class="about-line main-line"></div>
 						<div class="about-item">
-							<div class="about-item__imgs">
-								<div class="comfort-imgs__small">
-									<div class="comfort-img__small"><img src="img/about_img_small-1.jpg" alt="img"></div>
-									<div class="comfort-img__small"><img src="img/about_img_small-2.jpg" alt="img"></div>
-								</div>
-								<div class="comfort-img"><img src="img/about_img.jpg" alt="img"></div>
+							<div class="about-item__img">
+								<img src="img/about-comfort-img.jpg" alt="comfort">
 							</div>
 							<div class="about-item__info">
 								<h3 class="comfort-info__title about-inside__title">Комфортне життя</h3>
@@ -362,9 +370,13 @@
 							</div>
 						</div>
 						<div class="about-item">
-							<div class="about-item__imgs">
-								<div class="access-img"><img src="img/about_price_img-1.jpg" alt="img"></div>
-								<div class="access-img"><img src="img/about_price_img-2.jpg" alt="img"></div>
+							<div class="about-item__img">
+								<picture>
+									<source srcset="img/about-price-img.jpg" type="image/jpeg" media="(min-width:1000px)">
+									<source srcset="img/about-price-img.jpg" type="image/jpeg" media="(min-width: 500px)">
+									<source srcset="img/about-price-img.jpg" type="image/jpeg" media="(max-width: 500px)">
+									<img src="img/about-price-img.jpg" alt="price">
+								</picture>
 							</div>
 							<div class="about-item__info">
 								<h3 class="access-info__title about-inside__title">Доступна ціна дерев’яного будинку здивує кожного.
@@ -379,12 +391,13 @@
 							</div>
 						</div>
 						<div class="about-item">
-							<div class="about-item__imgs">
-								<div class="comfort-imgs__small">
-									<div class="fast-img__small"><img src="img/about_fast_small-1.jpg" alt="img"></div>
-									<div class="fast-img__small"><img src="img/about_fast_small-2.jpg" alt="img"></div>
-								</div>
-								<div class="fast-img"><img src="img/about_fast_img.jpg" alt="img"></div>
+							<div class="about-item__img">
+								<picture>
+									<source srcset="img/about-fast-img.png" type="image/jpeg" media="(min-width:1000px)">
+									<source srcset="img/about-fast-img.png" type="image/jpeg" media="(min-width: 500px)">
+									<source srcset="img/about-fast-img.png" type="image/jpeg" media="(max-width: 500px)">
+									<img src="img/about-fast-img.png" alt="fast">
+								</picture>
 							</div>
 							<div class="about-item__info wp-redactor">
 								<h3>Швидке будівництва дерев`яних будинків</h3>
@@ -403,19 +416,13 @@
 							</div>
 						</div>
 						<div class="about-item">
-							<div class="about-item__imgs wrap">
-								<div class="safe-img_wrapper">
-									<div class="safe-img"><img src="img/about_safe_img-1.jpg" alt="safe"></div>
-								</div>
-								<div class="safe-img_wrapper">
-									<div class="safe-img"><img src="img/about_safe_img-2.jpg" alt="safe"></div>
-								</div>
-								<div class="safe-img_wrapper">
-									<div class="safe-img"><img src="img/about_safe_img-3.jpg" alt="safe"></div>
-								</div>
-								<div class="safe-img_wrapper">
-									<div class="safe-img"><img src="img/about_safe_img-4.jpg" alt="safe"></div>
-								</div>
+							<div class="about-item__img">
+								<picture>
+									<source srcset="img/about-save-img.jpg" type="image/jpeg" media="(min-width:1000px)">
+									<source srcset="img/about-save-img.jpg" type="image/jpeg" media="(min-width: 500px)">
+									<source srcset="img/about-save-img.jpg" type="image/jpeg" media="(max-width: 500px)">
+									<img src="img/about-save-img.jpg" alt="save">
+								</picture>
 							</div>
 							<div class="about-item__info wp-redactor">
 								<h3>Безпека та екологічність вашої оселі</h3>
@@ -435,9 +442,13 @@
 							</div>
 						</div>
 						<div class="about-item">
-							<div class="about-item__imgs">
-								<div class="line-img"><img src="img/about_border_img-1.jpg" alt="border"></div>
-								<div class="line-img"><img src="img/about_border_img-2.jpg" alt="border"></div>
+							<div class="about-item__img">
+								<picture>
+									<source srcset="img/about-border-img.jpg" type="image/jpeg" media="(min-width:1000px)">
+									<source srcset="img/about-comfort-img.jpg" type="image/jpeg" media="(min-width: 500px)">
+									<source srcset="img/about-save-img.jpg" type="image/jpeg" media="(max-width: 500px)">
+									<img src="img/about-border-img.jpg" alt="border">
+								</picture>
 							</div>
 							<div class="about-item__info">
 								<h3 class="access-info__title about-inside__title">Без меж та кордонів</h3>
@@ -466,7 +477,14 @@
 						<div class="project-slider__wrapper">
 							<div class="project-slider">
 								<div class="project-item">
-									<div class="project-item__img"><img src="img/project_slider_img-1.jpg" alt="slider"></div>
+									<div class="project-item__img">
+										<picture>
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(min-width:1000px)">
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(min-width: 500px)">
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(max-width: 500px)">
+											<img src="img/project_slider_img-1.jpg" alt="slider">
+										</picture>
+									</div>
 									<div class="project-item__info">
 										<h3>БАЗА ВIДПОЧИНКУ “НАЗВА ПРОЕКТУ”</h3>
 										<p>Бажаєте зберегти нерви та дорогоцінний час? Наша компанія виконає всі види
@@ -480,7 +498,14 @@
 									</div>
 								</div>
 								<div class="project-item">
-									<div class="project-item__img"><img src="img/project_slider_img-1.jpg" alt="slider"></div>
+									<div class="project-item__img">
+										<picture>
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(min-width:1000px)">
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(min-width: 500px)">
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(max-width: 500px)">
+											<img src="img/project_slider_img-1.jpg" alt="slider">
+										</picture>
+									</div>
 									<div class="project-item__info">
 										<h3>БАЗА ВIДПОЧИНКУ “НАЗВА ПРОЕКТУ”</h3>
 										<p>Бажаєте зберегти нерви та дорогоцінний час? Наша компанія виконає всі види
@@ -494,7 +519,14 @@
 									</div>
 								</div>
 								<div class="project-item">
-									<div class="project-item__img"><img src="img/project_slider_img-1.jpg" alt="slider"></div>
+									<div class="project-item__img">
+										<picture>
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(min-width:1000px)">
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(min-width: 500px)">
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(max-width: 500px)">
+											<img src="img/project_slider_img-1.jpg" alt="slider">
+										</picture>
+									</div>
 									<div class="project-item__info">
 										<h3>БАЗА ВIДПОЧИНКУ “НАЗВА ПРОЕКТУ”</h3>
 										<p>Бажаєте зберегти нерви та дорогоцінний час? Наша компанія виконає всі види
@@ -508,7 +540,14 @@
 									</div>
 								</div>
 								<div class="project-item">
-									<div class="project-item__img"><img src="img/project_slider_img-1.jpg" alt="slider"></div>
+									<div class="project-item__img">
+										<picture>
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(min-width:1000px)">
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(min-width: 500px)">
+											<source srcset="img/project_slider_img-1.jpg" type="image/jpeg" media="(max-width: 500px)">
+											<img src="img/project_slider_img-1.jpg" alt="slider">
+										</picture>
+									</div>
 									<div class="project-item__info">
 										<h3>БАЗА ВIДПОЧИНКУ “НАЗВА ПРОЕКТУ”</h3>
 										<p>Бажаєте зберегти нерви та дорогоцінний час? Наша компанія виконає всі види
