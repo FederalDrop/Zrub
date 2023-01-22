@@ -21,7 +21,8 @@ $(function () {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				autoplay: true,
-				speed: 3000,
+				autoplaySpeed: 3000,
+				speed: 1300,
 				dots: false,
 				infinite: true,
 				responsive: [
@@ -293,6 +294,9 @@ window.addEventListener('load', function () {
 			//Успешная отправка формы
 			document.addEventListener('wpcf7mailsent', function (event) {
 				if ('53' == event.detail.contactFormId) {
+					sendFormDone();
+				}
+				if ('555' == event.detail.contactFormId) {
 					sendFormDone();
 				}
 			}, false);

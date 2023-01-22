@@ -410,6 +410,9 @@
 	line-height: 24px;
 	letter-spacing: 0.03em;
 	transition: all 0.5s ease;
+	& a {
+		color: #fff;
+	}
 }
 .price-item__text {
 	font-weight: 500;
@@ -818,6 +821,12 @@
 	width: 33%;
 	& a {
 		color: #FFFFFF;
+		display: flex;
+		margin: 0 0 20px 0;
+		transition: all 0.3s ease;
+		&:last-child {
+			margin: 0;
+		}
 	}
 }
 .contacts-item.double {
@@ -835,7 +844,6 @@
 .contacts-item__phone.desc {
 	flex-direction: column;
 	align-items: flex-end;
-	margin: 20px 0 0 0;
 }
 .contacts-item__img {
 	width: 25px;
@@ -1012,9 +1020,12 @@
 		color: rgba(255, 255, 255, 0.8);
 		margin: 0 0 30px 0;
 	}
-	ul, ol {
+	ul {
 		margin: 0 0 30px 0;
 		padding: 0 0 0 15px;
+	}
+	ol {
+		margin: 0 0 30px 0;
 	}
 	ul li {
 		font-size: 18px;
@@ -1039,6 +1050,11 @@
 		font-size: 18px;
 		line-height: 161%;
 		list-style: decimal;
+		list-style-position: inside;
+		margin: 0 0 10px 0;
+		&:last-child {
+			margin: 0;
+		}
 	}
 }
 @media only screen and (max-width: 1920px){
@@ -1181,6 +1197,9 @@
 	}
 }
 @media only screen and (max-width: 1000px){
+	.price-item:nth-child(even) {
+		margin: 0 7px;
+	}
 	.abs-about__left {
 		writing-mode: vertical-lr;
 		top: 60%;
@@ -1267,9 +1286,6 @@
 	.types-text__abs {
 		font-size: 100px;
 		bottom: 4%;
-	}
-	.types-item__img {
-		width: 369px;
 	}
 	.types {
 		padding: 120px 0 120px 0;
@@ -1554,9 +1570,6 @@
 	.head {
 		padding: 150px 0 0 0;
 	}
-	.price-item:nth-child(even) {
-    margin: 20px 7px 0 7px;
-	}
 	.title {
 		font-size: 26px;
 	}
@@ -1598,9 +1611,6 @@
 	}
 	.types-title {
 		width: 100%;
-	}
-	.types-item__img {
-		width: 500px;
 	}
 	.types-text__abs {
 		top: 10px;

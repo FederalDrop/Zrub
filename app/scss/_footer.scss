@@ -1,5 +1,5 @@
 .footer {
-	padding: 45px 0;
+	padding: 45px 0 0 0;
 	background: #1F1F25;
 	position: relative;
 	z-index: 1;
@@ -8,6 +8,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 0 45px 0;
 }
 .footer-logo__link {
 	width: 104px;
