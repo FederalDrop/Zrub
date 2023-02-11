@@ -1197,8 +1197,12 @@
 	}
 }
 @media only screen and (max-width: 1000px){
+	.price-item {
+		width: calc(50% - 14px);
+		margin: 0 7px 20px 7px;
+	}
 	.price-item:nth-child(even) {
-		margin: 0 7px;
+		margin: 0 7px 20px 7px;
 	}
 	.abs-about__left {
 		writing-mode: vertical-lr;
@@ -1445,6 +1449,9 @@
 		font-size: 80px;
 		top: 9%;
 	}
+	.price-item__text strong {
+		font-size: 20px;
+	}
 }
 @media only screen and (max-width: 650px){
 	.price-item__btn {
@@ -1461,6 +1468,17 @@
 	}
 	.price-item__img {
 		height: 280px;
+	}
+	.price-items {
+		width: 100%;
+		margin: 0;
+	}
+	.price-item {
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	.price-item:nth-child(even) {
+		margin: 0 0 20px 0;
 	}
 }
 @media only screen and (max-width: 600px){
@@ -1952,6 +1970,9 @@
 	}
 }
 @media only screen and (max-width: 360px){
+	.price-item__img {
+		height: 180px;
+	}
 	.head-info__btns {
 		flex-direction: column-reverse;
 		align-items: flex-start;

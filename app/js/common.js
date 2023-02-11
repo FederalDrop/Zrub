@@ -23,6 +23,7 @@ $(function () {
 				autoplay: true,
 				autoplaySpeed: 3000,
 				speed: 1300,
+				pauseOnHover: false,
 				dots: false,
 				infinite: true,
 				responsive: [
@@ -62,7 +63,10 @@ $(function () {
 			$(this).slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				speed: 1000,
+				autoplay: true,
+				autoplaySpeed: 3000,
+				speed: 1300,
+				pauseOnHover: false,
 				dots: false,
 				infinite: true,
 				responsive: [
@@ -115,22 +119,22 @@ if (window.matchMedia('(max-width: 1000px)').matches) {
 			}
 		]
 	});
-	$('.price-items').slick({
-		slidesToShow: 2,
-		slidesToScroll: 1,
-		speed: 1000,
-		dots: true,
-		arrows: false,
-		responsive: [
-			{
-				breakpoint: 650,
-				settings: {
-					slidesToShow: 1,
-					adaptiveHeight: true,
-				}
-			},
-		]
-	});
+	// $('.price-items').slick({
+	// 	slidesToShow: 2,
+	// 	slidesToScroll: 1,
+	// 	speed: 1000,
+	// 	dots: true,
+	// 	arrows: false,
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 650,
+	// 			settings: {
+	// 				slidesToShow: 1,
+	// 				adaptiveHeight: true,
+	// 			}
+	// 		},
+	// 	]
+	// });
 }
 
 window.addEventListener('load', function () {
